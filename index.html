@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Creator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main-div">
+        <div id="tasks-div">
+            <button id="task-1">Wash Car: $15</button>
+            <button id="task-2">Mow Law: $20</button>
+            <button id="task-3">Pull Weeds: $30</button>
+        </div>
+        <table>
+            <!-- Colunas Task e Total -->
+            <thead>
+                <tr>
+                    <th class="column-1">Task</th>
+                    <th class="column-2">Total</th>
+                </tr>
+            </thead>
+            <!-- Aqui se preenche os dados de cada tarefa -->
+            
+            <tbody id="body-el"></tbody>
+            
+            <tfoot id="foot-el">
+                <tr class="table-footer">
+                    <th class="column-1">Notes</th>
+                    <th class="column-2">Total Amount</th>
+                </tr>
+                <tr>
+                    <td class="column-1">Everything's complete</td>
+                    <td class="column-2" id="totalAmount-el"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <button id="sendinvoice-btn">Send Invoice</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
